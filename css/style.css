@@ -7,8 +7,15 @@ body {
 
 /* side-navigation */
 
-.main {
-    margin-left: 250px;
+main {
+    margin-left: 300px;
+    margin-right: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #2D76CB;
+        font-family:'Arial Rounded MT', sans-serif;
     }
 
   .sidenav a {
@@ -53,7 +60,7 @@ body {
     background-color: transparent;
     border-radius: 5px;
     margin-bottom: 20px;
-    width: 80%;
+    width: 85%;
     table-layout: fixed;
     text-align: left;
     }
@@ -61,3 +68,94 @@ body {
     .btn-nav:hover {
         background-color: #F6F5F5;
     }
+
+     /* box struktur */
+
+     .box-section {
+        background-color:white;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    /* mine-points */
+
+    .headline-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .headline {
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .headline h2 {
+        margin: 0;
+        font-family: 'Arial Rounded MT bold', sans-serif;
+        font-size: 20px;
+    }
+    
+    .link-dot-icon {
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    .link-dot-icon a {
+        margin-right: 5px; 
+    }
+    
+    .link-dot-icon img {
+        height: 15px;
+        width: auto;
+    }
+
+    .outline {
+        border: solid #E2E3E6 1px;
+        border-radius: 5px;
+        padding-top: 20px;
+    }
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.points-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.label {
+    display: flex;
+    color: #9FA0A4;
+    font-family: 'Arial Rounded MT', sans-serif;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.value {
+    color: #009530;
+    font-family: 'Arial Rounded MT bold', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.line {
+    border: solid #E2E3E6 1px;
+    justify-content: center;
+
+}
