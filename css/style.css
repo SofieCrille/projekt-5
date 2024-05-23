@@ -217,3 +217,114 @@ main {
     border-bottom: none;
 }
     
+/* ordrer sektion */
+
+.table-container {
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    color: #77787C; 
+    font-family: 'Arial Rounded MT', sans-serif;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.order-table th, .order-table td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.order-table th {
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+
+}
+
+.order-table th, .order-table td {
+    text-align: center;
+}
+
+.order-table td span.status {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.order-table td span.confirmed {
+    background-color: #009530;
+}
+
+.order-table td span.delivered {
+    background-color: #e0e0e0;
+    color: #77787C; 
+}
+
+.order-table tbody tr:last-child td {
+    border-bottom: none;
+}
+    
+
+/* produkter-section */
+
+.box-produkter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box-p1, .box-p2, .box-p3, .box-p4 {
+    border: solid #e3e3e3 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 220px;
+    padding: 20px;
+    position: relative;
+}
+
+.stikkontakt-billede {
+    height: 110px;
+    width: 110px;
+    display: flex;
+    align-self: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.produktbekrivelse {
+    font-family: 'Arial Rounded MT bold', sans-serif;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.produkt-tekst {
+    font-family: 'Arial Rounded MT', sans-serif;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.lk-logo {
+    height: 12px;
+    width: auto;
+}
+
+.green-logo {
+    max-height: 70px;
+    width: auto;
+    display:inline-block;
+    position: absolute;
+    top: 0;
+    left: -6px;
+}
