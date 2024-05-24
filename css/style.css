@@ -103,6 +103,8 @@ header{
     margin-right: 4px;
 }
 
+/*---header icons---*/
+
 .header-icons {
     display: flex;
     align-items: center;
