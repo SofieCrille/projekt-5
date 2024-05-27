@@ -378,7 +378,6 @@ header{
     justify-content: center;
 }
 
-
 .line {
     border: solid #E2E3E6 1px;
     justify-content: center;
@@ -911,7 +910,7 @@ header{
     height: 0;
     overflow: hidden;
     margin-top: -3px;
-    transition: 0.3s;
+    transition: 0.5s;
     overflow-y: auto;
 }
 
@@ -921,6 +920,17 @@ header{
     border: #ececec solid 1px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.question-image {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px;
+}
+
+.question-image img {
+    padding-bottom: 20px;
+    overflow:auto
 }
 
 /*---kontakt section---*/
