@@ -79,6 +79,29 @@ header{
     max-height: 75px;
 }
 
+@media (max-width: 768px) {
+    .overheader {
+        display: none;
+    }
+    header {
+        justify-content: space-between;
+        width: 100%;
+        top: 0;
+    }
+
+    .header-icons {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .search-form {
+        display: none;
+    }
+ }
+
 /*---search box---*/
 
 .search-form {
@@ -131,6 +154,12 @@ header{
     width: 20px;
     margin-top: 4px;
     margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        display: none; 
+    }
 }
 
 /*---header icons---*/
@@ -313,7 +342,7 @@ header{
     text-align: center;
     color: #026723;
     font-size: 32px;
-    margin-left: 300px;
+    margin-left: 227px;
     font-family:'Arial Rounded MT', sans-serif;
     font-weight: 600;
 }
