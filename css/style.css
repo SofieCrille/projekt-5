@@ -294,7 +294,7 @@ header{
      .box-section {
         background-color:white;
         border-radius: 5px;
-        margin-bottom: 20px;
+        margin-top: 30px;
         padding: 20px;
     }
     @media (max-width: 768px) {
@@ -738,6 +738,371 @@ header{
         gap: 20px;
     }
 }
+
+/*---Support section---*/
+
+.headline h3 {
+    margin: 0;
+    font-family: 'Arial Rounded MT bold', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 30px 5px;
+}
+
+.lille-box-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 30px;
+}
+
+.lille-box-section *{
+    flex: 1;
+}
+
+.lille-box {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    font-family: 'Arial Rounded MT', sans-serif;
+}
+
+.top-lille-box {
+    display: inline-block;
+}
+
+.top-lille-box img {
+    height: 20px;
+    max-width: 20px;
+}
+
+.lille-box p {
+    font-size: 16px;
+    padding: 5px 30px;
+    margin-bottom: 30px;
+}
+
+.lille-box button {
+    background-color: #e3e9df;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.lille-box button:hover {
+    background-color: #d6e0cf;
+}
+
+/*---searchform i faq---*/
+
+.search-form2 {
+    width: 100%;
+    min-width: 350px;
+    display: flex;
+}
+
+.search-box2 {
+    display: flex;
+    padding: 5px;
+    border: solid #d6d6d6 1px;
+    border-radius: 10px;
+    background: #f7f7f7;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-box2:hover {
+    background-color: #ffffff;
+    transition: 0.1ms;
+}
+
+.input-container2 {
+    flex: 1 1 auto;
+}
+
+.search-box2 input[type="text"] {
+    background-color: #f7f7f7;
+    display: inline-block;
+    padding: 5px;
+    border: none;
+    font-size: 1em;
+    width: 100%;
+}
+
+.search-box2 input[type="text"]:hover {
+    background-color: #ffffff;
+}
+
+.search-icon-container2 {
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box2 img {
+    display: inline-block;
+    width: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 20px 0 20px;
+}
+
+.keywords li {
+    list-style: none;
+    font-size: 13px;
+    font-family: 'Arial Rounded MT', sans-serif;
+    border: solid #aaaaaa 1px;
+    border-radius: 50px;
+    padding: 4px 12px;
+    background-color: #ffffff;
+}
+
+.keywords li:hover {
+    background-color: #eeeeee;
+}
+
+/*---accordion---*/
+
+.accordion-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.accordion .contentbox {
+    display: grid;
+    grid-row: span 2;
+    margin: 10px 0;
+}
+
+.accordion .contentbox .question {
+    position: relative;
+    font-family: 'Arial Rounded MT bold', sans-serif;
+    font-size: 16px;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #e3e9df;
+    color: #000000;
+    cursor: pointer;
+}
+
+.faq-pil {
+    position: absolute;
+    height: 20px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.accordion .contentbox .answer {
+    position: relative;
+    font-family: 'Arial Rounded MT', sans-serif;
+    background-color: #ffffff;
+    height: 0;
+    overflow: hidden;
+    margin-top: -3px;
+    transition: 0.3s;
+    overflow-y: auto;
+}
+
+.accordion .contentbox.active .answer {
+    height: fit-content;
+    padding: 30px 25px;
+    border: #ececec solid 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*---kontakt section---*/
+
+.kontakt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Kontakt-formular {
+    width: 100%;
+    padding: 25px 30px;
+    font-family: 'Arial Rounded MT', sans-serif;
+    font-size: 18px;
+}
+
+.Kontakt-formular .info-text {
+    font-size: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.Kontakt-formular form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0 12px 0;
+}
+
+form .user-details .input-box {
+    width: calc(100% / 2 - 40px);
+    margin-bottom: 15px;
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-family: 'Arial Rounded MT bold', sans-serif;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: solid #9FA0A4 1px;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: all 0.3 ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #3DCD58;
+
+}
+
+form .meddelelse {
+    margin-bottom: 40px;
+}
+
+form .meddelelse .input-box {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.meddelelse .input-box .details {
+    display: block;
+    font-family: 'Arial Rounded MT bold', sans-serif;
+    margin-bottom: 5px;
+}
+
+.meddelelse .input-box input{
+    height: 150px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: solid #9FA0A4 1px;
+    padding-left: 15px;
+    padding-bottom: 95px;
+    font-size: 16px;
+    transition: all 0.3 ease;
+}
+
+.meddelelse .input-box input:focus,
+.meddelelse .input-box input:valid{
+    border-color: #3DCD58;
+}
+
+.link {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.checkbox1 {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.checkbox2 {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: #3DCD58;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.send-button:hover {
+    background-color: #36b24d;
+}
+
+
+/*---Mediaquieries---*/
+
+@media only screen and (max-width: 600px) {
+    .headline h3 {
+        font-size: 14px;
+    }
+
+    .keywords {
+        gap: 0.8rem;
+        margin: 15px 0 15px;
+    }
+
+    .keywords li{
+        font-size: 10px;
+        border-radius: 50px;
+        padding: 3px 8px;
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+    
+/*---search form (ofte stillede spørgesmål)---*/
+
+    .search-form2 {
+        min-width: fit-content;
+    }
+    
+    .search-box2 {
+        padding: 2px;
+    }
+    
+    .search-box2 input[type="text"] {
+        font-size: 0.8em;
+        padding-top: 7px;
+    }
+    
+    .search-box2 img {
+        width: 16px;
+        margin-top: 5px;
+        margin-right: 4px;
+    }
+
+    .user-details .input-box input {
+        height: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    .accordion-container {
+        grid-template-columns: 1fr;
+    }
+      /*---kontakt formular---*/
+
+    .kontakt-container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+  }
 
 /* Footer */
 
