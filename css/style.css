@@ -289,6 +289,42 @@ header{
         }
     }
 
+    /* velkommen-section */
+
+.green-figure {
+    width: 98%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+.green-figure img {
+    width: 98%; 
+    height: auto; 
+    opacity: 20%;
+}
+
+.velkommen-tekst {
+    position: absolute;
+    text-align: center;
+    color: #026723;
+    font-size: 32p;
+    margin-left: 300px;
+    font-family:'Arial Rounded MT', sans-serif;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .velkommen-tekst {
+        font-size: 18px;
+        margin-left: 0;
+    }
+}
+
      /* box struktur */
 
      .box-section {
