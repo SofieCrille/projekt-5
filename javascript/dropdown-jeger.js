@@ -24,8 +24,8 @@ dropdown.addEventListener("change", function() {
     if (this.value !== "") {
         this.blur();
         let selectedTitle = this.value;
-        console.log("Du har valgt: " + selectedTitle);
-    } else {
+    } 
+    else {
         console.log("Ingen titel valgt.");
     }
 });
