@@ -18,17 +18,26 @@
                 <img src="billeder/schneider-logo.png" alt="Schneider electric logo">
             </div>
 
+           
             <form class="search-form" action="/search" method="get">
                 <div class="search-box">
-                    <div class="input-container">
-                        <input type="text" name="query" placeholder="Søg efter produkter, dokumenter & mere">
+                    <div id="myInputContainer" class="input-container">
+                        <input type="text" name="query" placeholder="Søg efter nøgleord, eller stil et spørgesmål" id="myInput" onfocus="showDropdown()" onkeyup="filterFunction()">
                     </div>
-                    <div class="search-icon-container">
+                    <div class="search-icon-container2">
                         <img src="icons/loop-groen.png" alt="search icon">
+                    </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#about">About</a>
+                        <a href="#base">Base</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#custom">Custom</a>
+                        <a href="#support">Support</a>
+                        <a href="#tools">Tools</a>
                     </div>
                 </div>
             </form>
-
             <div class="header-icons">
                 <div class="favorit-container">
                     <img src="icons/favorit-sort.png" alt="favorit produkter" class="favorit-default">
