@@ -3,10 +3,10 @@ function showDropdown() {
 }
 
 function filterDropdown() {
-  const input = document.getElementById("input");
-  const filter = input.value.toUpperCase();
-  const div = document.getElementById("dropdown-searchbar");
-  const a = div.getElementsByTagName("a");
+  let input = document.getElementById("input");
+  let filter = input.value.toUpperCase();
+  let div = document.getElementById("dropdown-searchbar");
+  let a = div.getElementsByTagName("a");
   for (let i = 0; i < a.length; i++) {
     let txtValue = a[i].textContent || a[i].innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -19,9 +19,9 @@ function filterDropdown() {
 
 window.onclick = function(event) {
   if (!event.target.matches('#input')) {
-    const dropdowns = document.getElementsByClassName("dropdown-content");
+    let dropdowns = document.getElementsByClassName("dropdown-content");
     for (let i = 0; i < dropdowns.length; i++) {
-      const openDropdown = dropdowns[i];
+      let openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
