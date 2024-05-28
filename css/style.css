@@ -774,18 +774,6 @@ h2{
     right: 0;
 }
 
-.etSlide:nth-child(1) {
-    background-image: url('billeder/slideshowbillede1.png');
-}
-
-.etSlide:nth-child(2) {
-    background-image: url('billeder/slideshowbillede2.jpg');
-}
-
-.etSlide:nth-child(3) {
-    background-image: url('billeder/slideshowbillede3.png');
-}
-
 
 .slideknap1, .slideknap2, .slideknap3{
     padding: 10px 20px;
