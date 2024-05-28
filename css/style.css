@@ -737,12 +737,22 @@ header{
     }
 }
 /* slideshow-sektion */
+p{
+    font-family: 'Arial Rounded MT', sans-serif;
+    font-size: 16px;
+}
+
+h2{
+    font-family: 'Arial Rounded MT bold', sans-serif;
+    font-size: 31px;
+}
 
 .slideshow-container {
     position: relative;
     max-width: 1000px;
     margin: auto;
     width: 1000px;
+    overflow: hidden;
 }
 
 .etSlide {
@@ -779,7 +789,6 @@ header{
 .next {
     right: 0;
 }
-
 .etSlide:nth-child(1) {
     background-image: url('billeder/slideshowbillede1.png');
 }
