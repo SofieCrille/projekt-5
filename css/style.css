@@ -194,6 +194,12 @@ header{
     display: block;
 }
 
+@media (max-width: 768px) {
+    .search-form, .search-box {
+        display: none;
+    }
+}
+
 /*---header icons---*/
 
 .header-icons {
@@ -350,6 +356,8 @@ header{
             display: none;
         }
     }
+
+    
 
     /* velkommen-section */
 
