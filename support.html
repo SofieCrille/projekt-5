@@ -6,6 +6,7 @@
         <title>MySchneider</title>
         <link rel="stylesheet" href="css/style.css">
         <script src="javascript/faq.js" defer></script>
+        <script src="javascript/dropdown-kategori.js" defer></script>
         <script src="javascript/dropdown-jeger.js" defer></script>
     </head>
     <body>
@@ -300,7 +301,9 @@
 
                                 <div class="input-box">
                                     <span class="details">Kategori</span>
-                                    <input class="input" type="text" placeholder="Vælg..." required>
+                                    <select class="input" id="kategori-dropdown" required>
+                                        <option value="" disabled selected>Vælg...</option>
+                                    </select>
                                 </div>
 
                                 <div class="input-box">
