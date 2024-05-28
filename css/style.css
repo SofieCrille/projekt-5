@@ -100,6 +100,15 @@ header{
     .search-form {
         display: none;
     }
+    .header-logo img{
+        display: flex;
+        max-height: 75px;
+        padding-left: 150px;
+    }
+
+    header{
+        background-color: #3DCD58;
+    }
  }
 
 /*---search box---*/
