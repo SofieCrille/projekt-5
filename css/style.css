@@ -1037,7 +1037,7 @@ form .user-details .input-box {
     margin-bottom: 5px;
 }
 
-.user-details .input-box input{
+.user-details .input-box .input{
     height: 50px;
     width: 100%;
     outline: none;
@@ -1048,8 +1048,8 @@ form .user-details .input-box {
     transition: all 0.3 ease;
 }
 
-.user-details .input-box input:focus,
-.user-details .input-box input:valid{
+.user-details .input-box .input:focus,
+.user-details .input-box .input:valid{
     border-color: #3DCD58;
 
 }
@@ -1069,7 +1069,7 @@ form .meddelelse .input-box {
     margin-bottom: 5px;
 }
 
-.meddelelse .input-box input{
+.meddelelse .input-box .input{
     height: 150px;
     width: 100%;
     outline: none;
@@ -1081,8 +1081,8 @@ form .meddelelse .input-box {
     transition: all 0.3 ease;
 }
 
-.meddelelse .input-box input:focus,
-.meddelelse .input-box input:valid{
+.meddelelse .input-box .input:focus,
+.meddelelse .input-box .input:valid{
     border-color: #3DCD58;
 }
 
@@ -1157,7 +1157,7 @@ form .meddelelse .input-box {
         margin-right: 4px;
     }
 
-    .user-details .input-box input {
+    .user-details .input-box .input {
         height: 35px;
     }
   }

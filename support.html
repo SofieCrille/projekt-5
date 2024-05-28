@@ -6,6 +6,7 @@
         <title>MySchneider</title>
         <link rel="stylesheet" href="css/style.css">
         <script src="javascript/faq.js" defer></script>
+        <script src="javascript/dropdown-jeger.js" defer></script>
     </head>
     <body>
         <div class="overheader">
@@ -274,48 +275,44 @@
                             <div class="user-details">
                                 <div class="input-box">
                                     <span class="details">Fornavn</span>
-                                    <input type="text" placeholder="Fornavn" required>
+                                    <input class="input" type="text" placeholder="Fornavn" required>
                                 </div>
 
                                 <div class="input-box">
                                     <span class="details">Efternavn</span>
-                                    <input type="text" placeholder="Efternavn" required>
+                                    <input class="input" type="text" placeholder="Efternavn" required>
                                 </div>
 
                                 <div class="input-box">
                                     <span class="details">E-mail</span>
-                                    <input type="text" placeholder="navn123@firma.com" required>
+                                    <input class="input" type="text" placeholder="navn123@firma.com" required>
                                 </div>
                                 
                                 <div class="input-box">
                                     <span class="details">Telefonnummer</span>
-                                    <input type="text" placeholder="+45" required>
+                                    <input class="input" type="text" placeholder="+45" required>
                                 </div>
                                
                                 <div class="input-box">
                                     <span class="details">Virksomhed</span>
-                                    <input type="text" placeholder="Virksomhed" required>
+                                    <input class="input" type="text" placeholder="Virksomhed" required>
                                 </div>
 
                                 <div class="input-box">
                                     <span class="details">Kategori</span>
-                                    <input type="text" placeholder="Vælg..." required>
+                                    <input class="input" type="text" placeholder="Vælg..." required>
                                 </div>
 
                                 <div class="input-box">
                                     <span class="details">Land eller område</span>
-                                    <input type="text" placeholder="Vælg..." required>
+                                    <input class="input" type="text" placeholder="Vælg..." required>
                                 </div>
 
                                 <div class="input-box">
                                     <span class="details">Jeg er...</span>
-                                    <input type="text" placeholder="Vælg..." required>
-                                </div>
-                            </div>
-                            <div class="meddelelse">
-                                <div class="input-box">
-                                    <span class="details">Meddelelse</span>
-                                    <input type="text" placeholder="Giv os nogle oplysninger om, hvordan vi kan hjælpe dig i dag" required>
+                                    <select class="input" id="title-dropdown" required>
+                                        <option value="" disabled selected>Vælg...</option>
+                                    </select>
                                 </div>
                             </div>
                             <p class="info-text">Schneider Electric bruger de personlige oplysninger, du giver os, til at imødekomme dine anmodninger, 
