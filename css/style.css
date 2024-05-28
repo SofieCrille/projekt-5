@@ -690,6 +690,96 @@ header{
     }
 }
 /* slideshow-sektion */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    width: 1000px;
+}
+
+.etSlide {
+    display: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+}
+
+.slide-content {
+    text-align: center;
+    width: 80%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-size: 25px;
+}
+
+.next {
+    right: 0;
+}
+
+.etSlide:nth-child(1) {
+    background-image: url('billeder/slideshowbillede1.png');
+}
+
+.etSlide:nth-child(2) {
+    background-image: url('billeder/slideshowbillede2.jpg');
+}
+
+.etSlide:nth-child(3) {
+    background-image: url('billeder/slideshowbillede3.png');
+}
+
+
+.slideknap1, .slideknap2, .slideknap3{
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 10px; 
+}
+
+.slideknap1{
+    background-color: #FFFFFF; 
+    border: none;
+    color: #05B22B;
+}
+
+.slideknap2{
+    background-color: #05B22B;
+    border: none;
+    color: #FFFFFF;
+}
+
+.slideknap3{
+    background-color: #ffffff00;
+    border: 1px solid white;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .etSlide {
+        display: flex;
+        height: auto;
+        width: 300px;
+    }
+  }
+  
+
 
 /* kurser-sektion */
 
