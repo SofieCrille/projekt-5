@@ -737,7 +737,7 @@ header{
 .slide-content {
     text-align: center;
     width: 80%;
-    font-family:'Arial Rounded MT', sans-serif;
+    background-color: rgba(0, 0, 0, 0.039);
 }
 
 .prev, .next {
