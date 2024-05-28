@@ -712,6 +712,15 @@ header{
     }
 }
 /* slideshow-sektion */
+p{
+    font-family: 'Arial Rounded MT', sans-serif;
+    font-size: 16px;
+}
+
+h2{
+    font-family: 'Arial Rounded MT bold', sans-serif;
+    font-size: 31px;
+}
 
 .slideshow-container {
     position: relative;
