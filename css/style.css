@@ -753,9 +753,9 @@ h2{
 
 .slideshow-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 100%;
     margin: auto;
-    width: 1000px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -769,6 +769,8 @@ h2{
     background-position: center;
     height: 250px;
     width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
 }
 
 
@@ -794,15 +796,15 @@ h2{
     right: 0;
 }
 .etSlide:nth-child(1) {
-    background-image: url('billeder/slideshowbillede1.png');
+    background-image: url('../billeder/slideshowbillede1.png');
 }
 
 .etSlide:nth-child(2) {
-    background-image: url('billeder/slideshowbillede2.jpg');
+    background-image: url('../billeder/slideshowbillede2.jpg');
 }
 
 .etSlide:nth-child(3) {
-    background-image: url('billeder/slideshowbillede3.png');
+    background-image: url('../billeder/slideshowbillede3.png');
 }
 
 
