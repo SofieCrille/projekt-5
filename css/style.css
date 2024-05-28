@@ -744,11 +744,13 @@ header{
 p{
     font-family: 'Arial Rounded MT', sans-serif;
     font-size: 16px;
+    padding-bottom: 10px;
 }
 
 h2{
     font-family: 'Arial Rounded MT bold', sans-serif;
     font-size: 31px;
+    padding-bottom: 20px;
 }
 
 .slideshow-container {
@@ -790,11 +792,17 @@ h2{
     margin-top: -22px;
     color: white;
     font-size: 25px;
+    z-index: 2; 
 }
 
 .next {
-    right: 0;
+    right: 20px; 
 }
+
+.prev {
+    left: 20px;
+}
+
 .etSlide:nth-child(1) {
     background-image: url('../billeder/slideshowbillede1.png');
 }
@@ -836,12 +844,20 @@ h2{
     color: white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .etSlide {
         display: flex;
-        height: auto;
-        width: 300px;
+        height: 200px;
+        width: 100%px;
     }
+    p{
+        font-size: 14px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+
   }
   
 
