@@ -993,7 +993,7 @@ h2{
 
 /*---Support section---*/
 
-.headline h3 {
+h3 .headline {
     margin: 0;
     font-family: 'Arial Rounded MT bold', sans-serif;
     font-size: 18px;
