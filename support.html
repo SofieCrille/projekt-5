@@ -8,6 +8,7 @@
         <script src="javascript/faq.js" defer></script>
         <script src="javascript/dropdown-kategori.js" defer></script>
         <script src="javascript/dropdown-jeger.js" defer></script>
+        <script src="javascript/search.js" defer></script>
     </head>
     <body>
         <div class="chatbot-container">
@@ -19,21 +20,34 @@
         </div>
 
         <header>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        
             <div class="header-logo">
                 <img src="billeder/schneider-logo.png" alt="Schneider electric logo">
             </div>
-
             <form class="search-form" action="/search" method="get">
                 <div class="search-box">
-                    <div class="input-container">
-                        <input type="text" name="query" placeholder="Søg efter produkter, dokumenter & mere">
-                    </div>
-                    <div class="search-icon-container">
-                        <img src="icons/loop-groen.png" alt="search icon">
-                    </div>
+                  <div id="inputContainer" class="input-container">
+                    <input type="text" name="query" placeholder="Søg efter nøgleord, eller stil et spørgesmål" id="input" onfocus="showDropdown()" onkeyup="filterDropdown()">
+                  </div>
+                  <div class="search-icon-container2">
+                    <img src="icons/loop-groen.png" alt="search icon">
+                  </div>
+                  <div id="dropdown-searchbar" class="dropdown-content">
+                    <a href="#">Stikkontakter</a>
+                    <a href="#">Visual 1.32</a>
+                    <a href="#">LK fuga</a>
+                    <a href="#">Control viewer</a>
+                    <a href="#">Wiser</a>
+                    <a href="#">Blanket</a>
+                    <a href="#">ICH</a>
+                  </div>
                 </div>
-            </form>
-
+              </form>
             <div class="header-icons">
                 <div class="favorit-container">
                     <img src="icons/favorit-sort.png" alt="favorit produkter" class="favorit-default">
@@ -48,50 +62,71 @@
                     <img src="icons/myschneider-lysgroen.png" alt="din profil hover" class="din-profil-hover">
                 </div>
             </div>
-            
         </header>
 
-        <nav class="sidenav">
-            <button class="btn-nav">
-             <a href="index.html"><img src="icons/home.png" alt="Hjem" class="side-icon"> <span id="Hjem">Hjem</span></a>
-            </button>
-            <button class="btn-nav">
-             <a href="#"><img src="icons/box-circle-check.png" alt="Ordrer" class="side-icon">Ordrer</a>
-            </button>
-            <button class="btn-nav">
-             <a href="#"><img src="icons/hand-plus.png" alt="Support" class="side-icon">Support</a>
-            </button>
-            <button class="btn-nav">
-             <a href="#"><img src="icons/circle-star.png" alt="Pointsystem" class="side-icon">Pointsystem</a>
-            </button>
-            <button class="btn-nav">
-             <a href="#"><img src="icons/invoice.png" alt="Faktura" class="side-icon">Faktura</a>
-            </button> 
-            <button class="btn-nav">
-             <a href="#"><img src="icons/box-open.png" alt="Produkter" class="side-icon">Produkter</a>
-            </button> 
-            <button class="btn-nav">
-             <a href="#"><img src="icons/meeting.png" alt="Forums" class="side-icon">Forums</a>
-            </button> 
-            <button class="btn-nav">
-             <a href="#"><img src="icons/location.png" alt="Forhandler" class="side-icon">Forhandler</a>
-            </button> 
-            <button class="btn-nav">
-             <a href="#"><img src="icons/newspaper.png" alt="Nyheder" class="side-icon">Nyheder</a>
-            </button> 
-            <button class="btn-nav">
-             <a href="#"><img src="icons/learning.png" alt="Kurser" class="side-icon">Kurser</a>
-            </button> 
-            <button class="btn-nav">
-             <a href="#"><img src="icons/certificate.png" alt="Certificeringer" class="side-icon">Certificeringer</a>
-            </button> 
+        <nav class="sidenav" id="sidenav-full">
+            <div class="btn-nav">
+                <a href="index.html" class="nav-link">
+                    <img src="icons/home.png" alt="Hjem" class="side-icon"> <span id="Hjem">Hjem</span>
+                </a>
+            </div>
+            <div class="btn-nav">
+                <div class="nav-link">
+                    <img src="icons/box-circle-check.png" alt="Ordrer" class="side-icon"><span>Ordrer</span>
+                </div>
+            </div>
+            <div class="btn-nav">
+                <a href="#" class="nav-link">
+                    <img src="icons/hand-plus.png" alt="Support" class="side-icon"><span>Support</span>
+                </a>
+            </div>
+            <div class="btn-nav">
+                <div class="nav-link">
+                    <img src="icons/circle-star.png" alt="Pointsystem" class="side-icon"><span>Pointsystem</span>
+                </div>
+            </div>
+            <div class="btn-nav">
+                <div class="nav-link">
+                    <img src="icons/invoice.png" alt="Faktura" class="side-icon"><span>Faktura</span>
+                </div>
+            </div> 
+            <div class="btn-nav">
+                <div class="nav-link">
+                    <img src="icons/box-open.png" alt="Produkter" class="side-icon"><span>Produkter</span>
+                </div>
+            </div> 
+            <div class="btn-nav">
+                <div class="nav-link">
+                    <img src="icons/meeting.png" alt="Forums" class="side-icon"><span>Forums</span>
+                </div>
+            </div> 
+            <div class="btn-nav">
+                <div class="nav-link">
+                    <img src="icons/location.png" alt="Forhandler" class="side-icon"><span>Forhandler</span>
+                </div>
+            </div> 
+            <div class="btn-nav">
+                <div class="nav-link">
+                    <img src="icons/newspaper.png" alt="Nyheder" class="side-icon"><span>Nyheder</span>
+                </div>
+            </div> 
+            <div class="btn-nav">
+                <div class="nav-link">
+                    <img src="icons/learning.png" alt="Kurser" class="side-icon"><span>Kurser</span>
+                </div>
+            </div> 
+            <div class="btn-nav">
+                <div class="nav-link">
+                    <img src="icons/certificate.png" alt="Certificeringer" class="side-icon"><span>Certificeringer</span>
+                </div>
+            </div> 
         </nav>
 
         <main>
             <section class="lille-box-section">
                 <div class="lille-box">
                     <div class="top-lille-box">
-                        <span class="headline"><h3>Få telefonisk hjælp</h3></span>
+                        <h3 class="headline">Få telefonisk hjælp</h3>
                         <img src="icons/phone-plus.png" alt="icon">
                     </div>
                     <p>Ring til os for hurtig og personlig assistance. Vi står klar til at hjælpe dig</p>
@@ -100,7 +135,7 @@
 
                 <div class="lille-box">
                     <div class="top-lille-box">
-                        <span class="headline"><h3>Chat med en tekniker</h3></span>
+                        <h3 class="headline">Chat med en tekniker</h3>
                         <img src="icons/chat-green.png" alt="icon">
                     </div>
                     <p>Få support via chat. Vores teknikere er online for at hjælpe dig nu</p>
@@ -109,7 +144,7 @@
 
                 <div class="lille-box">
                     <div class="top-lille-box">
-                        <span class="headline"><h3>Find hjælp i forums</h3></span>
+                        <h3 class="headline">Find hjælp i forums</h3>
                         <img src="icons/meeting-green.png" alt="icon">
                     </div>
                     <p>Søg i vores forums for svar og del erfaringer med andre brugere. Få hjælp døgnet rundt.</p>
@@ -120,7 +155,7 @@
             <section class="box-section">
                 <div class="faq-section">
                     <div class="headline-link">
-                        <span class="headline"><h2>Ofte stillede spørgsmål</h2></span>
+                        <h2 class="headline">Ofte stillede spørgsmål</h2>
                         <span class="link-dot-icon"><a href="#">Gå til forums</a> <img src="Icons/dots.png" alt="prikker ikon"></span>
                     </div>
                     <form class="search-form2" action="/search" method="get">
@@ -269,7 +304,7 @@
 
             <section class="box-section">
                 <div class="headline-link">
-                    <span class="headline"><h2>Kontakt os med din henvendelse</h2></span>
+                    <h2 class="headline">Kontakt os med din henvendelse</h2>
                 </div>
 
                 <div class="kontakt-container">
@@ -325,7 +360,7 @@
                                 til at kommunikere med dig og til at yde dig bedre service, hvis du kontakter os igen. Anmodninger analyseres automatisk 
                                 af vores systemer for at give dig et hurtigt og relevant svar. Disse aktiviteter udføres i vores kunders og Schneider 
                                 Electrics legitime interesse. Vi gemmer dine data, så længe det er nødvendigt til disse formål. Få flere oplysninger om 
-                                dine rettigheder, og hvordan Schneider Electric bruger personlige oplysninger i <a href="https://www.se.com/dk/da/about-us/legal/data-privacy.jsp?utm_source=google&utm_medium=cpc&utm_purpose=marketo&utm_campaign=2024_jan_dk_allbu_einnovation_google_consideration_sem_global_gmc24_corebrand&utm_term=Schneider+Electric&campaign_objective=consideration&mcl_name=einnovation&gad_source=1&gbraid=0AAAAAD2pl3q_zSnoVIYf9s0_r-it-Wd0o&gclid=Cj0KCQjw6auyBhDzARIsALIo6v8uKMrr5HZBa1n3KBZRCaRjfg7RAthTElJxXfa6BnGpuKtRvrRoY2UaAqleEALw_wcB" class="link">fortrolighedspolitikken<a></a></p>
+                                dine rettigheder, og hvordan Schneider Electric bruger personlige oplysninger i <a href="https://www.se.com/dk/da/about-us/legal/data-privacy.jsp?utm_source=google&utm_medium=cpc&utm_purpose=marketo&utm_campaign=2024_jan_dk_allbu_einnovation_google_consideration_sem_global_gmc24_corebrand&utm_term=Schneider+Electric&campaign_objective=consideration&mcl_name=einnovation&gad_source=1&gbraid=0AAAAAD2pl3q_zSnoVIYf9s0_r-it-Wd0o&gclid=Cj0KCQjw6auyBhDzARIsALIo6v8uKMrr5HZBa1n3KBZRCaRjfg7RAthTElJxXfa6BnGpuKtRvrRoY2UaAqleEALw_wcB" class="link">fortrolighedspolitikken</a></p>
                             
                             <p class="info-text">Ved at vælge "Ja" og trykke på tilmeld giver du samtykke til, at du modtager nyhedsbreve om produkter, serviceydelser, 
                                 kurser og arrangementer via e-mails fra Schneider Electric Danmark A/S (herunder Schneider Electric IT Denmark ApS, 
@@ -334,10 +369,10 @@
                                 CVR 70698714, Lautrupvang 1, 2750 Ballerup, tlf. nr. +45 35 15 90 00 som dataansvarlig. <a href="https://www.se.com/dk/da/about-us/legal/data-privacy.jsp?utm_source=google&utm_medium=cpc&utm_purpose=marketo&utm_campaign=2024_jan_dk_allbu_einnovation_google_consideration_sem_global_gmc24_corebrand&utm_term=Schneider+Electric&campaign_objective=consideration&mcl_name=einnovation&gad_source=1&gbraid=0AAAAAD2pl3q_zSnoVIYf9s0_r-it-Wd0o&gclid=Cj0KCQjw6auyBhDzARIsALIo6v8uKMrr5HZBa1n3KBZRCaRjfg7RAthTElJxXfa6BnGpuKtRvrRoY2UaAqleEALw_wcB" class="link">Læs vores privatlivspolitik.</a></p>
                             
                             <input type="checkbox" class="checkbox1">
-                            <label for="checkbox1">ja</label><br>
+                            <label>ja</label><br>
 
                             <input type="checkbox" class="checkbox2">
-                            <label for="checkbox2">nej</label><br>
+                            <label>nej</label><br>
 
                             <button class="send-button" type="submit">Send</button>
                         </form>

@@ -315,7 +315,7 @@ header{
 
 
 
-.sidenav a {
+.sidenav .nav-link {
     padding: 6px 6px 6px 6px;
     text-decoration: none;
     font-family: 'Arial Rounded MT', sans-serif;
@@ -331,9 +331,9 @@ header{
         position: fixed;
         z-index: 1;
         overflow-x: hidden;
-        margin-top: 50;
+        margin-top: -10px;
         background-color: white;
-        padding-top: 20px;
+        padding-top: 35px;
         border-right: #e3e3e3 1px solid;
       }
 
@@ -456,7 +456,7 @@ header{
         align-items: center;
     }
     
-    .headline h2 {
+    .headline {
         margin: 0;
         font-family: 'Arial Rounded MT bold', sans-serif;
         font-size: 20px;
@@ -864,7 +864,7 @@ h2{
     .etSlide {
         display: flex;
         height: 200px;
-        width: 100%px;
+        width: 100%;
     }
     p{
         font-size: 14px;
@@ -1009,7 +1009,7 @@ h2{
 
 /*---Support section---*/
 
-.headline h3 {
+h3 .headline {
     margin: 0;
     font-family: 'Arial Rounded MT bold', sans-serif;
     font-size: 18px;
@@ -1249,7 +1249,7 @@ form .user-details .input-box {
     border: solid #9FA0A4 1px;
     padding-left: 15px;
     font-size: 16px;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .user-details .input-box .input:focus,
@@ -1282,7 +1282,7 @@ form .meddelelse .input-box {
     padding-left: 15px;
     padding-bottom: 95px;
     font-size: 16px;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .meddelelse .input-box .input:focus,
