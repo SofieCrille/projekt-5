@@ -299,7 +299,7 @@ header{
 
 
 
-.sidenav a {
+.sidenav .nav-link {
     padding: 6px 6px 6px 6px;
     text-decoration: none;
     font-family: 'Arial Rounded MT', sans-serif;
@@ -440,7 +440,7 @@ header{
         align-items: center;
     }
     
-    .headline h2 {
+    .headline {
         margin: 0;
         font-family: 'Arial Rounded MT bold', sans-serif;
         font-size: 20px;
