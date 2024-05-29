@@ -38,6 +38,22 @@ a {
     color: #2D76CB;
     font-family:'Arial Rounded MT', sans-serif;
 }
+
+/* Chatbot */
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chatbot-container img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer
+ }
+
 /*--header--*/
 
 .overheader{
@@ -744,7 +760,7 @@ header{
 p{
     font-family: 'Arial Rounded MT', sans-serif;
     font-size: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 10px;  padding-bottom: 10px;
 }
 
 h2{
